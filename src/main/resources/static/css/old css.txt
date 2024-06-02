@@ -1,0 +1,289 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('pexels-photo-by-sunday-bueno.png') no-repeat center center/cover;
+    text-align: center;
+    position: relative;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between; /* Space between the title and nav items */
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    color: #87ceeb;
+}
+
+.title {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.header {
+    color: white;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 1px;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+.description {
+    color: white;
+    font-size: 20px;
+    max-width: 850px;
+	margin-top: 6px;
+    margin-bottom: 15px;
+    line-height: 0.6;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.button {
+    background: #191970;
+    color: white;
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    font-size: 30px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: #add8e6;
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: 30px;
+    }
+    .navbar-container {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .navbar {
+        margin-top: 10px;
+    }
+    .header {
+        font-size: 30px;
+		margin-top: 70px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        font-size: 24px;
+    }
+    .navbar-container {
+        padding: 10px;
+        flex-direction: column;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .header {
+        font-size: 30px;
+		margin-top: 80px;
+    }
+    .description {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .button {
+        font-size: 30px;
+        padding: 20px 60px;
+    }
+}
+
+/* Form Container Styling */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* Increase gap for even spacing */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 40px 20px; /* Increase padding for better proportions */
+    border-radius: 10px;
+    max-width: 700px; /* Adjust form width as needed */
+    margin: 0 auto; /* Center the form */
+    height: auto; /* Auto height to fit content */
+}
+
+.form-container input,
+.form-container textarea {
+    width: 80%; /* Adjust width for better fit */
+    padding: 10px; /* Increase padding for better appearance */
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px; /* Add margin to ensure space between fields */
+}
+
+.form-container select{
+    width: 84%; /* Adjust width for better fit */
+    padding: 10px; /* Increase padding for better appearance */
+    border: 3px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px; /* Add margin to ensure space between fields */
+}
+
+.form-container button {
+    width: 80%; /* Match button width with input fields */
+    padding: 15px; /* Adjust padding for better fit */
+    background: #191970;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px; /* Add margin to separate the button from the fields */
+}
+
+.form-container button:hover {
+    background: #87ceeb;
+}
+
+/* How It Works Page Styling */
+
+.header-hiw{
+	font-size: 25px;
+	margin-top: 60px;
+	color: white;
+}
+
+.how-it-works-container {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 100px;
+    text-align: left;
+	min-height: calc(100vh - 200px);
+}
+
+.how-it-works-container h2,
+.how-it-works-container h3 {
+    text-align: center;
+    color: #333;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.how-it-works-container p {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+.how-it-works-address {
+    text-align: center;
+    font-weight: bold;
+}
+.menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+}
+
+@media (max-width: 360px) {
+    .title {
+        font-size: 20px;
+    }
+    .navbar-container {
+        padding: 5px;
+        flex-direction: column;
+    }
+    .menu-icon {
+        display: block;
+    }
+    .navbar {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+        width: 100%;
+    }
+    .menu-toggle:checked + .menu-icon + .navbar {
+        display: flex;
+    }
+    .navbar a {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .header {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    .description {
+        font-size: 14px;
+        width: 80%; /* Decrease width */
+        height: auto; /* Adjust height to fit content */
+        padding: 10px; /* Increase padding */
+        margin-top: 10px; /* Ensure space between header and description */
+    }
+    .description p:first-of-type {
+        margin-bottom: 20px; /* Increase space between paragraphs */
+    }
+    .button {
+        font-size: 24px;
+        padding: 15px 40px;
+    }
+}

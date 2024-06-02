@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Woof Washing</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar-container">
+        <div class="title">Woof Wash</div>
+				<input type="checkbox" id="menu-toggle" class="menu-toggle">
+<label for="menu-toggle" class="menu-icon">☰</label>
+        <nav class="navbar">
+          <a href="/">Home</a>
+          <a href="/appointment">Book</a>
+          <a href="/how-it-works">How it works</a>
+        </nav>
+      </div>
+      <div class="header">
+        <h1>Contact Us</h1>
+      </div>
+      <div class="form-container">
+        <form action="/submit" method="POST">
+          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="phone" placeholder="Phone Number" required />
+          <textarea name="description" placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error - Something Went Wrong</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .error-container {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            text-align: center;
+        }
+        .error-header {
+            font-size: 25px;
+            margin-top: 20px;
+            color: #ff0000;
+        }
+        .ascii-art {
+            font-family: monospace;
+            margin-top: 20px;
+        }
+		.home-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+        .home-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <h1 class="error-header">Something Went Wrong</h1>
+        <p>Woof! We encountered an error processing your request. Please try again later.</p>
+        <a href="/" class="home-button">Back to Home</a>
+        <div class="ascii-art">
+            <pre>
+             ^..^      /
+             /_/\_____/
+                /\   /\
+               /  \ /  \
+            </pre>
+        </div>
+    </div>
+</body>
+</html>
